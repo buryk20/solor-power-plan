@@ -1,0 +1,126 @@
+$largeScreenSize: 2207px;
+$bigBanner: 1924px;
+$startAdaptive: 1582px;
+$startAdaptiveSmol: 1516px;
+$textPad: 1456px;
+$promotionConditions: 1436px;
+$smScreenWidth: 1376px;
+$staticPlockSolor: 1412px;
+$smallestScreenWidth: 1080px;
+$smScreenHeight: 720px;
+$bigMobileWidth: 960px;
+$mobileWidth: 680px;
+$mobileHeight: 600px;
+$blockImgStatic: 510px;
+$snakeSolor: 491px;
+$littleMob: 397px; 
+
+$heightBan: 500px;
+
+@mixin snakeSolor {
+  @media (max-width: $snakeSolor) {
+    @content;
+  }
+}
+
+
+@mixin staticPlockSolor {
+  @media (max-width: $staticPlockSolor) {
+    @content;
+  }
+}
+
+@mixin startAdaptiveSmol {
+  @media (max-width: $startAdaptiveSmol) {
+    @content;
+  }
+}
+
+
+@mixin littleMob {
+  @media (max-width: $littleMob) {
+    @content;
+  }
+}
+
+@mixin promotionConditions {
+  @media (max-width: $promotionConditions) {
+    @content;
+  }
+}
+
+@mixin blockImgStatic {
+  @media (max-width: $blockImgStatic) {
+    @content;
+  }
+}
+
+@mixin adaptivProblemUps {
+  @media (max-width: 1556px) {
+    @content;
+  }
+}
+@mixin smailText {
+  @media (max-width: 820px) {
+    @content;
+  }
+}
+
+@mixin gelPos {
+  @media (max-width: 1637px) {
+    @content;
+  }
+}
+
+@mixin bigBanner {
+  @media (min-width: $bigBanner) {
+    @content;
+  }
+}
+  @mixin startAdaptive {
+    @media (max-width: $startAdaptive) {
+      @content;
+  }
+}
+
+@mixin textPad {
+  @media (max-width: $textPad) {
+    @content;
+  }
+}
+
+@mixin smScreenWidth {
+  @media (max-width: $smScreenWidth) {
+    @content;
+  }
+}
+
+@mixin smallestScreenWidth {
+  @media (max-width: $smallestScreenWidth) {
+    @content;
+  }
+}
+
+@mixin bigMobileWidth {
+  @media (max-width: $bigMobileWidth) {
+    @content;
+  }
+}
+
+@mixin mobil {
+  @media (max-width: $mobileWidth) {
+    @content;
+  }
+}
+
+@mixin mobileWidth {
+  @media (max-width: $mobileWidth) {
+    @content;
+  }
+}
+
+@mixin largeScreenSize {
+  @media (min-width: $largeScreenSize) {
+    @content;
+  }
+}

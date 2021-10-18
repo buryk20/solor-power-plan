@@ -1,0 +1,186 @@
+// Переменные
+
+$fontRobotoReg: "Roboto", sans-serif;
+$mainColor: #f36c21;
+$inputAdaptive: 922px;
+$greyLine: #c4c4c4;
+$colorBlackText: #434343;
+// Миксины
+
+@mixin line {
+  max-width: 1440px;
+  border-bottom: 1px solid $greyLine;
+  @include marCenter;
+}
+
+@mixin akbTypeBtnMob {
+  min-width: 82px;
+  left: 140px;
+  padding: 5px 9px;
+}
+
+@mixin paddingMob {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@mixin smScreenWidth {
+  @media (max-width: $startAdaptive) {
+    @content;
+  }
+}
+
+@mixin inputAdaptive {
+  @media (max-width: $inputAdaptive) {
+    @content;
+  }
+}
+
+@mixin borderBlockOrang {
+  border: 1px solid $mainColor;
+  border-radius: 8px;
+}
+
+@mixin fontBolt {
+  font-family: $fontRobotoReg;
+  font-weight: 700;
+  color: $colorBlackText;
+}
+
+@mixin fontBoltHeading {
+  font-family: $fontRobotoReg;
+  font-weight: 700;
+  font-size: 36px;
+  color: $colorBlackText;
+}
+@mixin iconBenefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+@mixin technologyAkb {
+  min-width: 187px;
+  height: 32px;
+  @include btnSmall;
+  position: relative;
+}
+
+@mixin banTitleSize {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+@mixin textPosCent {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin pageGred {
+  max-width: 1550px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+@mixin pageGredSolor {
+  max-width: 1500px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+@mixin littleOrangeLine {
+  width: 349px;
+  border-top: 1px solid $mainColor;
+}
+
+@mixin textHeadingSale {
+  max-width: 612px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  @include fontBoltHeading;
+}
+
+@mixin textSale {
+  max-width: 612px;
+  padding-top: 24px;
+  margin-bottom: 30px;
+  font-family: $fontRobotoReg;
+  font-size: 18px;
+}
+
+@mixin textMainSol {
+  font-family: $fontRobotoReg;
+  font-size: 16px;
+} 
+
+@mixin marCenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin btn {
+  padding: 8px 18px;
+  color: #ffffff;
+  background-color: $mainColor;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@mixin btnSmall {
+  padding: 5px 18px;
+  color: #ffffff;
+  background-color: $mainColor;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@mixin boxInput {
+  border: 1px solid #8a8a8a;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 12px 69px 8px 16px;
+}
+
+@mixin dataPrompt {
+  width: 282px;
+  padding: 9px 6px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  z-index: -1;
+}
+
+@mixin pentagonalElement {
+  width: 458px;
+  height: 315px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+  clip-path: polygon(100% 0, 100% 76%, 76% 100%, 0 100%, 0 0);
+}
+
+@mixin positionImg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  object-fit: cover;
+}
+
+@mixin centreFlex {
+  display: flex;
+  align-items: center;
+}

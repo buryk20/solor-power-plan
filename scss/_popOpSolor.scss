@@ -1,0 +1,109 @@
+.pop-up-solor-pos-act {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 1rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c082266;
+  backdrop-filter: blur(25px);
+  visibility: hidden;
+  transition: all 0.6s cubic-bezier(0, 0.98, 0.89, 0.96);
+}
+.active-solar {
+  // transition: all 0.6s;
+  visibility: visible;
+  display: flex;
+  // opacity: 1;
+}
+.pop-up-solor {
+  max-width: 401px;
+  width: 100%;
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: relative;
+  background-color: #ffffff;
+  @include textMainSol;
+  &__order {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  &__wrp-btn {
+    @include paddingMob;
+    padding-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__btn {
+    width: 15px;
+    height: 16px;
+    position: relative;
+    border-radius: 2px;
+    &:hover {
+      background-color: $mainColor;
+      &::after {
+        background-color: #ffffff;
+      }
+      &::before {
+        background-color: #ffffff;
+      }
+    }
+    &::after {
+      content: "";
+      width: 15px;
+      height: 2px;
+      top: 7px;
+      right: 0;
+      position: absolute;
+      background-color: #8a8a8a;
+      transform: rotate(45deg);
+    }
+    &::before {
+      content: "";
+      width: 15px;
+      height: 2px;
+      top: 7px;
+      right: 0;
+      position: absolute;
+      background-color: #8a8a8a;
+      transform: rotate(-45deg);
+    }
+  }
+  &__line {
+    max-width: 401px;
+    width: 100%;
+    border-top: 1px solid $mainColor;
+  }
+  &__form-wrp {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__wrp-cont {
+    padding-bottom: 10px;
+    @include paddingMob;
+  }
+  &__text {
+    padding-top: 3px;
+    margin-bottom: 11px;
+    line-height: 20px;
+    text-align: center;
+  }
+  &__input {
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    border: 1px solid #8a8a8a;
+    color: #363636;
+    border-radius: 8px;
+  }
+  &__btn-input {
+    width: 187px;
+    @include marCenter;
+    @include btn;
+  }
+}

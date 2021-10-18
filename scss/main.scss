@@ -1,0 +1,753 @@
+@import "_normalize";
+@import "_variables_mixin.scss";
+@import "_styleAdaptive.scss";
+@import "_styleForBannerNew";
+@import "_popOpSolor";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+
+.checkerboard-order-sol {
+  margin-bottom: 40px;
+  @include pageGredSolor;
+  @include textMainSol;
+  font-size: 18px;
+  @include mobileWidth {
+    & {
+      margin-bottom: 20px;
+    }
+  }
+  &__text-for-ban {
+    max-width: 1116px;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    @include marCenter;
+    text-align: center;
+    @include mobileWidth {
+      & {
+        @include paddingMob;
+        padding-top: 25px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__line {
+    @include line;
+    @include startAdaptiveSmol {
+      & {
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+    }
+  }
+  &__text-title {
+    max-width: 1300px;
+    padding-top: 22px;
+    margin-bottom: 40px;
+    @include fontBoltHeading;
+    @include startAdaptiveSmol {
+      & {
+        @include paddingMob;
+      }
+    }
+    @include mobileWidth {
+      & {
+        padding-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 25px;
+      }
+    }
+  }
+  &__wrp {
+
+  }
+  &__pos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include startAdaptiveSmol {
+      & {
+        @include paddingMob;
+      }
+    }
+    @include bigMobileWidth {
+      & {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+  &__pos-l {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    object-fit: cover;
+    @include startAdaptiveSmol {
+      & {
+        @include paddingMob;
+      }
+    }
+    @include bigMobileWidth {
+      & {
+        // margin-bottom: 40px;
+      }
+    }
+    @include bigMobileWidth {
+      & {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+    }
+  }
+  &__text-wrp {
+    max-width: 750px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    @include startAdaptiveSmol {
+      & {
+        max-width: 735px;
+        width: 100%;
+      }
+    }
+    @include smallestScreenWidth {
+      & {
+        padding-left: 16px;
+      }
+    }
+    @include bigMobileWidth {
+      & {
+        padding-top: 20px;
+        padding-left: 0;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+  }
+  &__text-wrp-l {
+    max-width: 750px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    @include startAdaptiveSmol {
+      & {
+        max-width: 735px;
+        width: 100%;
+      }
+    }
+    @include smallestScreenWidth {
+      & {
+        padding-right: 16px;
+      }
+    }
+    @include bigMobileWidth {
+      & {
+        padding-top: 20px;
+        padding-left: 0;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+  }
+  &__text {
+    max-width: 513px;
+    @include mobileWidth {
+      & {
+        max-width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  &__img {
+    object-fit: cover;
+  }
+}
+
+.turnkey-power-plant {
+  margin-bottom: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  @include mobileWidth {
+    & {
+      margin-bottom: 30px;
+      flex-direction: column;
+    }
+  }
+  &__wrp {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    @include mobileWidth {
+      & {
+        height: 149px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__wrp-l {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    @include mobileWidth {
+      & {
+        height: 149px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__img {
+    position: relative;
+    @include banTitleSize;
+    @include mobileWidth {
+      & {
+        height: 149px;
+      }
+    }
+  }
+  &__text-wrp {
+    @include marCenter;
+    @include pageGredSolor;
+    @include textPosCent;
+    align-items: flex-start;
+    @include startAdaptiveSmol {
+      & {
+        @include paddingMob;
+      }
+    }
+    @include mobileWidth {
+      & {
+        position: relative;
+      }
+    }
+  }
+  &__text-main {
+    max-width: 480px;
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    @include mobileWidth {
+      & {
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 22px;;
+      }
+    }
+  }
+  &__lineOr {
+    max-width: 349px;
+    width: 100%;
+    margin-bottom: 36px;
+    border-bottom: 1px solid $mainColor;
+    @include mobileWidth {
+      & {
+        @include marCenter;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  &__text {
+    max-width: 480px;
+    margin-bottom: 84px;
+    font-size: 18px;
+    @include mobileWidth {
+      & {
+        margin-bottom: 15px;
+        text-align: center;
+      }
+    }
+  }
+  &__btn {
+    @include btn;
+    @include mobileWidth {
+      & {
+        display: block;
+        @include marCenter;
+      }
+    }
+  }
+}
+
+.type-solor-station {
+  @include pageGredSolor;
+  @include textMainSol;
+  @include startAdaptiveSmol {
+    & {
+      @include paddingMob;
+    }
+  }
+  &__text-wrp {
+    max-width: 750px;
+    margin-bottom: 30px;
+    line-height: 24px;
+    @include mobileWidth {
+      & {
+        margin-bottom: 15px;
+        font-size: 14px;
+      }
+    }
+  }
+  &__wrp {
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include smallestScreenWidth {
+      & {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    @include mobileWidth {
+      & {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &__wrp-l {
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include smallestScreenWidth {
+      & {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+    @include mobileWidth {
+      & {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &__img {
+    @include marCenter;
+  }
+  &__title-text {
+    margin-bottom: 20px;
+    font-size: 24px;
+    @include smallestScreenWidth {
+      & {
+        display: none;
+      }
+    }
+  }
+  &__title-text-mob {
+    display: none;
+    @include smallestScreenWidth {
+      & {
+        margin-bottom: 15px;
+        font-size: 22px;
+        display: flex;
+        text-transform: uppercase;
+        justify-content: center;
+      }
+    }
+  }
+  &__lineOr {
+    max-width: 349px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $mainColor;
+    @include mobileWidth {
+      & {
+        @include marCenter;
+        margin-bottom: 15px;
+      }
+    }
+    @include smallestScreenWidth {
+      & {
+        display: none;
+      }
+    }
+  }
+  &__btn {
+    @include btn;
+    @include mobileWidth {
+      & {
+        display: block;
+        @include marCenter;
+      }
+    }
+  }
+  &__conte-wrp-text {
+    @include smScreenWidth {
+      & {
+        padding-left: 16px;
+      }
+    }
+    @include smallestScreenWidth {
+      & {
+        padding-left: 0;
+      }
+    }
+  }
+  &__img-wrp {
+    @include smScreenWidth {
+      & {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.equipment-selection-solar {
+  margin-bottom: 51px;
+  @include textMainSol;
+  @include pageGredSolor
+  text-align: center;
+  &__text-main {
+    margin-bottom: 22px;
+    font-size: 24px;
+    font-weight:700;
+  }
+  &__text {
+    margin-bottom: 65px;
+    font-size: 18px;
+  }
+  &__block {
+    max-width: 280px;
+    width: 100%;
+    min-height: 216px;
+    margin-bottom: 20px;
+    @include paddingMob;
+    @include centreFlex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 10px 30px #00000040;
+    background-color: #ffffff;
+    @include mobileWidth {
+      & {
+        max-width: 170px;
+        width: 100%;
+        min-height: 170px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+  &__icon {
+    width: fit-content;
+  }
+  &__wrp-block {
+    margin-bottom: 36px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    @include startAdaptiveSmol {
+      & {
+        @include paddingMob;
+      }
+    }
+    @include mobileWidth {
+      & {
+        margin-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+.stages-work-solor {
+  margin-bottom: 51px;
+  @include textMainSol;
+  @include pageGredSolor;
+  @include startAdaptiveSmol {
+    & {
+      @include paddingMob;
+    }
+  }
+  text-align: center;
+  &__circle {
+    max-width: 23px;
+    width: 100%;
+    height: 23px;
+    margin-bottom: 35px;
+    position: relative;
+    background-color: $mainColor;
+    border-radius: 50%;
+    @include staticPlockSolor {
+      & {
+        display: none;
+      }
+    }
+    @include snakeSolor {
+      & {
+        display: flex;
+      }
+    }
+  }
+  &__wrp-cont {
+    @include centreFlex;
+    flex-direction: column;
+    position: relative;
+    @include staticPlockSolor {
+      & {
+        margin-bottom: 20px;
+      }
+    }
+    &::before {
+      content: "";
+      max-width: 230px;
+      width: 100%;
+      height: 80px;
+      position: absolute;
+      top: 144px;
+      right: -124px;
+      border-top: 1px solid #000;
+      @include staticPlockSolor {
+        & {
+          display: none;
+        }
+      }
+    }
+  }
+  &__line-r {
+    position: relative;
+    &::before {
+      content: "";
+      max-width: 230px;
+      width: 100%;
+      height: 80px;
+      position: absolute;
+      top: 144px;
+      right: -124px;
+      border-top: 1px solid #000;
+      @include snakeSolor {
+        & {
+          max-width: 165px;
+          height: 340px;
+          right: -40px;
+          top: 118px;
+          display: block;
+          border-top-right-radius: 40px;
+          border-bottom-right-radius: 40px;
+          border-right: 1px solid #000;
+          border-bottom: 1px solid #000;
+        }
+      }
+    } 
+  }
+  &__line-l {
+    position: relative;
+    &::before {
+      content: "";
+      max-width: 230px;
+      width: 100%;
+      height: 80px;
+      position: absolute;
+      top: 144px;
+      right: -124px;
+      border-top: 1px solid #000;
+      @include snakeSolor {
+        & {
+          max-width: 165px;
+          height: 341px;
+          left: -40px;
+          top: 118px;
+          display: block;
+          border-top-right-radius: 40px;
+          border-bottom-right-radius: 40px;
+          border-right: 1px solid #000;
+          border-bottom: 1px solid #000;
+          transform: rotate(180deg);
+        }
+      }
+    } 
+  }
+  &__wrp-cont-end {
+    @include centreFlex;
+    flex-direction: column;
+    position: relative;
+  }
+  &__img {
+    margin-bottom: 36px;
+    position: relative;
+    @include snakeSolor {
+      & {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  &__text-main {
+    margin-bottom: 71px;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  &__text { 
+    
+  }
+  &__text-wrp {
+    width: 230px;
+    min-height: 154px;
+    padding: 0 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #F1F1F1;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      top: -15px;
+      left: 111px;
+      border: 10px solid transparent;
+      border-top: 17px solid #F1F1F1;
+      transform: rotate(300deg);
+    }
+  }
+  &__wrp {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+.specialists-lp-solar {
+  margin-bottom: 30px;
+  @include textMainSol;
+  @include pageGredSolor;
+  @include startAdaptiveSmol {
+    & {
+      @include paddingMob;
+    }
+  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  @include bigMobileWidth {
+    & {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  &__text-wrp {
+    padding-left: 37px;
+    line-height: 24px;
+    @include bigMobileWidth {
+      & {
+        padding-left: 0;
+      }
+    }
+  }
+  &__text {
+    margin-bottom: 25px;
+    @include bigMobileWidth {
+      & {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+  }
+  &__btn {
+    @include btn;
+    @include bigMobileWidth {
+      & {
+        display: block;
+        @include marCenter;
+      }
+    }
+  }
+}
+
+.comment-solor {
+  padding-bottom: 70px;
+  background-color: #EEEEEE;
+  &__wrp {
+    @include textMainSol;
+    @include pageGredSolor;
+    @include startAdaptiveSmol {
+      & {
+        @include paddingMob;
+      }
+    }
+  }
+  &__tetx-title {
+    padding-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+  }
+  &__text-wrp {
+    max-width: 353px;
+    padding-left: 26px;
+    padding-right: 26px;
+    margin-bottom: 8px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    @include mobileWidth {
+      & {
+        padding-right: 10px;
+      }
+    }
+  }
+  &__img-wrp {
+    margin-right: 11px;
+    background-color: $greyLine;
+    border-radius: 50%;
+    width: 62px;
+    height: 62px;
+  }
+  &__img-pos {
+    padding-top: 30px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    @include mobileWidth {
+      & {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__name {
+    padding-left: 5px;
+    margin-bottom: 6px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  &__text {
+    margin-bottom: 21px;
+    line-height: 24px;
+    @include mobileWidth {
+      & {
+        line-height: 16px;
+      }
+    }
+  }
+  &__like-wrp {
+    margin-bottom: 8px;
+    display: flex;
+    font-size: 14px;
+    align-items: flex-start;
+  }
+  &__like {
+    color: #329138;
+  }
+  &__diz-like {
+    color: #E25750;
+  }
+  &__img {
+    margin-right: 7px;
+  }
+  &__like-pos {
+    padding-bottom: 19px;
+  }
+  &__wrp-cont {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}

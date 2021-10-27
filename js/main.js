@@ -41,21 +41,28 @@ window.onload = function() {
       $("#phone").mask("+38(999) 999-99-99");
     });
     const errNum = document.querySelector(".pop-up-solor__err-phone");
-    const errName = document.querySelector(".pop-up-solor__name"); 
+    const errName = document.querySelector(".pop-up-solor__name");
+    const notHones = document.querySelector(".pop-up-solor__not-phone"); 
     if(event.target.classList.contains("pop-up-solor__btn-input"))
       if (event.target instanceof HTMLInputElement) {
         const telVal = document.querySelector(".tel-val-solar").value;
+        console.log(telVal);
         const firstNum = (telVal+'')[4];
         const nameInfo = document.querySelector(".name-info-solar").value;
         if (nameInfo === '') {
           errName.style.display = "block";
-        } else {
+        }  else {
           errName.style.display = "none";
+        } if(telVal == false) {
+            notHones.style.display = "block";
+            console.log('1');
+        } if (telVal != false) {
+          notHones.style.display = "none";
+          if(firstNum != "0") {
+            errNum.style.display = "block";
+          }
         }
-         if(firstNum != "0") {
-          errNum.style.display = "block";
-          console.log("21");
-        } else {
+        else {
           errNum.style.display = "none";
         }
       }

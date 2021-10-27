@@ -433,6 +433,11 @@ label {
   color: #ff0000;
 }
 
+.pop-up-solor__not-phone {
+  display: none;
+  color: #ff0000;
+}
+
 .pop-up-solor__name {
   display: none;
   color: #ff0000;

@@ -53,10 +53,10 @@ window.onload = function() {
           errName.style.display = "block";
         }  else {
           errName.style.display = "none";
-        } if(telVal == false) {
+        } if(!telVal) {
             notHones.style.display = "block";
             console.log('1');
-        } if (telVal != false) {
+        } if (telVal) {
           notHones.style.display = "none";
           if(firstNum != "0") {
             errNum.style.display = "block";

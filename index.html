@@ -16,8 +16,13 @@
     />
 
     <link rel="stylesheet" href="css/main.css" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
     <script src="js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      
+    </script>
   </head>
   <body>
     <main id="main">
@@ -585,7 +590,7 @@
           </div>
         </div>
       </article>
-      <article class="pop-up-solor-pos-act" style="display: flex">
+      <article class="pop-up-solor-pos-act" >
         <article class="pop-up-solor">
           <div class="pop-up-solor__wrp-btn">
             <p class="pop-up-solor__order">{{__('solorPowerPnan.orderPopUp')}}</p>
@@ -598,15 +603,18 @@
             </p>
             <div>
               <form class="pop-up-solor__form-wrp" action="#">
+                <div class="pop-up-solor__name">Введите Имя</div>
                 <input
-                  class="pop-up-solor__input"
+                  class="pop-up-solor__input name-info-solar"
                   type="text"
                   placeholder="Имя Фамилия"
                 />
+                <div class="pop-up-solor__err-phone">Введите номер телефона</div>
                 <input
-                  class="pop-up-solor__input"
+                  class="pop-up-solor__input tel-val-solar"
+                  id="phone"
                   type="tel"
-                  placeholder="+8000000000"
+                  placeholder="+3 80"
                 />
                 <input
                   class="pop-up-solor__input"

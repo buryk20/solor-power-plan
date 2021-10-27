@@ -34,26 +34,38 @@ window.onload = function() {
     }
   }  
   animOnScroll();
+  
   main.onclick = function (event) {
     const popup = document.querySelector(".pop-up-solor-pos-act").classList;
+    $(document).ready(function(jQuery) {
+      $("#phone").mask("+38(999) 999-99-99");
+    });
+    const errNum = document.querySelector(".pop-up-solor__err-phone");
+    const errName = document.querySelector(".pop-up-solor__name"); 
+    if(event.target.classList.contains("pop-up-solor__btn-input"))
+      if (event.target instanceof HTMLInputElement) {
+        const telVal = document.querySelector(".tel-val-solar").value;
+        const firstNum = (telVal+'')[4];
+        const nameInfo = document.querySelector(".name-info-solar").value;
+        if (nameInfo === '') {
+          errName.style.display = "block";
+        } else {
+          errName.style.display = "none";
+        }
+         if(firstNum != "0") {
+          errNum.style.display = "block";
+          console.log("21");
+        } else {
+          errNum.style.display = "none";
+        }
+      }
     if (event.target.classList.contains("btn-js")) {
       popup.add("active-solar");
-      $( document ).ready(function() {
-        $(".btn-js").click(function() {
-          const $a = $(".pop-up-solor-pos-act");
-          $a.fadeIn();
-        });
-      });
     
     } else if (event.target.classList.contains("pop-up-solor__btn") || event.target.classList.contains("pop-up-solor-pos-act")) {
-      popup.remove("active-solar")
-      $( document ).ready(function() {
-        $(".pop-up-solor-pos-act").click(function () {
-          const $a = $(".pop-up-solor-pos-act");
-          $a.fadeOut();
-        });
-      });
-      
+      popup.remove("active-solar");
+      errNum.style.display = "none";
+      errName.style.display = "none";
+      }
     }
   }
-}
